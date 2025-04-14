@@ -21,6 +21,7 @@ a {
 
 }
 
+/**********************barra navegação**************/
 header {
     display: flex;
     justify-content: center;
@@ -46,6 +47,8 @@ header {
     color: #5c5c5c;
 }
 
+
+/************************projetos******************/
 .projetos {
     display: flex;
     flex-direction: column;
@@ -77,11 +80,22 @@ header {
     margin-bottom: 15px;
 }
 
-.imagem-card {
+.imagem-card-projetos {
     object-fit: cover;
     overflow: hidden;
     height: 200px;
     width: 100%;
     border-radius: 8px;
+
+}
+
+/***********************rodapé*********************/
+.rodape {
+    background-color: #171717;
+    color: #ffffff;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
 
 }
