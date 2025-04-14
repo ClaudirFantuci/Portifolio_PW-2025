@@ -56,8 +56,25 @@
             </div>
         </section>
 
+        <section class="contato" id="contato">
+            <h1>Entre em contato</h1>
+            <form class="formulario_card" id="formulario" onsubmit="enviarMensagem(event)">
+                <div class="input_formulario">
+                    <input placeholder="Nome" class="campo_formulario" id="nome" required>
+                </div>
+
+                <div class="input_formulario">
+                    <textarea class="campo_formulario" placeholder="Digite sua mensagem" rows="6" id="mensagem"
+                        required></textarea>
+                </div>
+                <button type="submit" class="botao_formulario">Enviar Whatsapp</button>
+            </form>
+        </section>
+
         <footer class="rodape">
             <p>Copyright &copy; 2025</p>
         </footer>
 
     </main>
+    <script src="scripts.js"></script>
+</body>

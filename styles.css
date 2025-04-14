@@ -89,6 +89,71 @@ header {
 
 }
 
+/***********************contato*******************/
+.contato {
+    display: flex;
+    flex-direction: column;
+    background-color: #24252A;
+    font-family: "Heebo", sans-serif;
+    padding: 10px;
+    height: 80vh;
+    width: 100%;
+    color: #ffffff;
+}
+
+.contato h1 {
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.formulario_card {
+    height: 350px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #7c7c7c;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #879197;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_formulario {
+    margin: 7px;
+}
+
+.campo_formulario {
+    justify-content: center;
+    padding: 10px;
+    margin: 8px;
+    width: 350px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.botao_formulario {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #FF6464;
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    margin: 15px
+}
+
+.botao_formulario:hover {
+    color: #e2dfdf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
 /***********************rodapé*********************/
 .rodape {
     background-color: #171717;
