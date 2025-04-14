@@ -47,6 +47,36 @@ header {
     color: #5c5c5c;
 }
 
+/***********************sobre*********************/
+.sobre {
+    display: flex;
+    flex-direction: column;
+    background-color: #24252A;
+    font-family: "Heebo", sans-serif;
+    padding: 10px;
+    height: 80vh;
+    width: 100%;
+    color: #ffffff;
+}
+
+.sobre_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+}
+
+.foto_perfil {
+    object-fit: cover;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
 
 /************************projetos******************/
 .projetos {
@@ -123,6 +153,46 @@ header {
     width: 100px;
 }
 
+/********************experiencia*********************/
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    background-color: #7c7c7c;
+    font-family: "Heebo", sans-serif;
+    padding: 10px;
+    height: 40vh;
+    width: 100%;
+    color: #ffffff;
+}
+
+/*********************educação*********************/
+.educacao {
+    display: flex;
+    flex-direction: column;
+    background-color: #24252A;
+    font-family: "Heebo", sans-serif;
+    padding: 10px;
+    height: 40vh;
+    width: 100%;
+    color: #ffffff;
+}
+
+.ano {
+
+    background: #7a2525;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+
+}
+
+.educacao h1 {
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
 /***********************contato*******************/
 .contato {
     display: flex;
@@ -175,7 +245,8 @@ header {
     font-size: 20px;
     cursor: pointer;
     color: #ffffff;
-    background-color: #FF6464;
+    background-color: #7a2525;
+    /* background-color: #FF6464; */
     border-radius: 8px;
     font-size: 20px;
     border: none;
