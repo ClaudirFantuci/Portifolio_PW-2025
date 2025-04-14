@@ -55,7 +55,7 @@ header {
     background-color: #7c7c7c;
     font-family: "Heebo", sans-serif;
     padding: 10px;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     color: #ffffff;
 }
@@ -89,11 +89,45 @@ header {
 
 }
 
+/************************habilidades**************/
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    background-color: #24252A;
+    font-family: "Heebo", sans-serif;
+    padding: 10px;
+    height: 40vh;
+    width: 100%;
+    color: #ffffff;
+}
+
+.habilidades h1 {
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.habilidades_grade {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.habilidades_icons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
 /***********************contato*******************/
 .contato {
     display: flex;
     flex-direction: column;
-    background-color: #24252A;
+    background-color: #7c7c7c;
     font-family: "Heebo", sans-serif;
     padding: 10px;
     height: 80vh;
@@ -111,7 +145,8 @@ header {
     width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #7c7c7c;
+    background-color: #24252A;
+
     border-radius: 8px;
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
