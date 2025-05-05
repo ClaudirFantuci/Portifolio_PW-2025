@@ -4,72 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title data-i18n="title">Portfólio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
-
 </head>
 
 <body>
     <header>
         <nav>
             <ul class="nav-links">
-                <li><a href="#sobre">sobre</a></li>
-                <li><a href="#projetos">projetos</a></li>
-                <li><a href="#habilidades">habilidades</a></li>
-                <li><a href="#experiência">experiência</a></li>
-                <li><a href="#educação">educação</a></li>
-                <li><a href="#contato">contato</a></li>
+                <li><a href="#sobre" data-i18n="nav_sobre">sobre</a></li>
+                <li><a href="#projetos" data-i18n="nav_projetos">projetos</a></li>
+                <li><a href="#habilidades" data-i18n="nav_habilidades">habilidades</a></li>
+                <li><a href="#experiência" data-i18n="nav_experiencia">experiência</a></li>
+                <li><a href="#educação" data-i18n="nav_educacao">educação</a></li>
+                <li><a href="#contato" data-i18n="nav_contato">contato</a></li>
+                <select id="troca-idioma" class="troca-idioma">
+                    <option value="pt">PT</option>
+                    <option value="en">EN</option>
+                </select>
             </ul>
         </nav>
     </header>
     <main>
         <section class="sobre" id="sobre">
             <img src="/assets/foto_perfil.jpg" alt="" class="foto_perfil">
-            <h1>Oi eu sou claudir, Engenheiro de Software.</h1>
+            <h1 data-i18n="sobre_titulo"> eu sou Claudir.</h1>
             <div class="sobre_card">
-                <p>Olá! Sou estudante do 3º ano de Engenharia de Software no IFPR. Neste
+                <p data-i18n="sobre_texto">Olá! Sou estudante do 3º ano de Engenharia de Software no IFPR. Neste
                     portfólio, você encontrará alguns dos meus projetos, experiências e aprendizados.
                     Estou em busca de novos desafios e oportunidades para aplicar meus conhecimentos. Seja bem-vindo!
                 </p>
             </div>
         </section>
+
         <section class="projetos" id="projetos">
-            <h1>projetos recentes</h1>
+            <h1 data-i18n="projetos_titulo">projetos recentes</h1>
             <div class="projetos_grade">
                 <div class="projetos_card">
                     <h1>S.I.A.P</h1>
-                    <p>Sistema integrado de atendimento piscológico</p>
-
+                    <p data-i18n="siap_desc">Sistema integrado de atendimento piscológico</p>
                     <img src="/assets/imagem-projeto-1.PNG" alt="" class="imagem-card-projetos">
-
+                    <button class="projetos_botao"><a href="" data-i18n="botao_acesar">acessar</a></button>
                 </div>
 
                 <div class="projetos_card">
                     <h1>Onixx</h1>
-                    <p>Sistema para gerenciamento de vendas de veiculos</p>
-                    </p>
-
+                    <p data-i18n="onixx_desc">Sistema para gerenciamento de vendas de veiculos</p>
                     <img src="/assets/imagem-projeto-2.PNG" alt="" class="imagem-card-projetos">
-
+                    <button class="projetos_botao"><a href="" data-i18n="botao_acesar">acessar</a></button>
                 </div>
 
                 <div class="projetos_card">
-                    <h1>Projeto de extensão</h1>
-                    <p>Curso de configuração de celular para a melhor idade</p>
-
+                    <h1 data-i18n="extensao_titulo">Projeto de extensão</h1>
+                    <p data-i18n="extensao_desc">Curso de configuração de celular para a melhor idade</p>
                     <img src="/assets/imagem-projeto-3.PNG" alt="" class="imagem-card-projetos">
-
-
+                    <button class="projetos_botao"><a href="" data-i18n="botao_acesar">acessar</a></button>
                 </div>
+
             </div>
+
+        </section>
+
+        <section class="repositorios_grade">
+            <h2 data-i18n="titulo_repositorios">Veja também minhas ultimas contribuições no github.</h2>
+            <section class="repositorios" id="repositorios">
+            </section>
         </section>
 
         <section class="habilidades" id="habilidades">
-            <h1>Habilidades</h1>
+            <h1 data-i18n="habilidades_titulo">Habilidades</h1>
             <div class="habilidades_grade">
                 <div class="habilidades_icons">
                     <i class="fa-brands fa-python fa-2xl" style="color: #FFD43B;"></i> <br>
@@ -80,66 +87,71 @@
                     <i class="fa-brands fa-java fa-2xl" style="color: #f20202;"></i> <br>
                     <p>java</p>
                 </div>
+
                 <div class="habilidades_icons">
                     <i class="fa-solid fa-database fa-2xl"></i> <br>
                     <p>mysql</p>
                 </div>
             </div>
         </section>
+
         <section class="experiencia" id="experiência">
-            <h1>Experiência</h1>
+            <h1 data-i18n="experiencia_titulo">Experiência</h1>
             <div class="experiencia_grade">
                 <div class="experiencia_card">
-                    <h1>Estágio</h1>
-                    <p>Desenvolvedor de sistemas</p>
+                    <h1 data-i18n="estagio">Estágio</h1>
+                    <p data-i18n="dev_sistemas">Desenvolvedor de sistemas</p>
                     <p>2023 - 2024</p>
                 </div>
 
                 <div class="experiencia_card">
-                    <h1>Estágio</h1>
-                    <p>Desenvolvedor de sistemas</p>
+                    <h1 data-i18n="estagio">Estágio</h1>
+                    <p data-i18n="dev_sistemas">Desenvolvedor de sistemas</p>
                     <p>2022 - 2023</p>
                 </div>
 
                 <div class="experiencia_card">
-                    <h1>Estágio</h1>
-                    <p>Desenvolvedor de sistemas</p>
+                    <h1 data-i18n="estagio">Estágio</h1>
+                    <p data-i18n="dev_sistemas">Desenvolvedor de sistemas</p>
                     <p>2021 - 2022</p>
                 </div>
             </div>
-
         </section>
 
         <section class="educacao" id="educação">
-            <h1>Educação</h1>
+            <h1 data-i18n="educacao_titulo">Educação</h1>
             <div class="educacao_grade">
                 <div class="educacao_card">
-                    <h2>Faculdade bacharelado em Engenharia de Software no IFPR</h2>
-                    <p>Discente do curso de engenharia de Software no IFPR</p>
-                    <p> <span class="ano">2023 - Atual</span></p>
+                    <h2 data-i18n="faculdade">Faculdade bacharelado em Engenharia de Software no IFPR</h2>
+                    <p data-i18n="discente">Discente do curso de engenharia de Software no IFPR</p>
+                    <p><span class="ano">2023 - Atual</span></p>
                 </div>
             </div>
-
         </section>
+
         <section class="contato" id="contato">
-            <h1>Entre em contato</h1>
+            <h1 data-i18n="contato_titulo">Entre em contato</h1>
             <form class="formulario_card" id="formulario" onsubmit="enviarMensagem(event)">
                 <div class="input_formulario">
-                    <input placeholder="Nome" class="campo_formulario" id="nome" required>
+                    <input placeholder="Nome" data-i18n="nome_placeholder" class="campo_formulario" id="nome" required>
                 </div>
 
                 <div class="input_formulario">
-                    <textarea class="campo_formulario" placeholder="Digite sua mensagem" rows="6" id="mensagem"
-                        required></textarea>
+                    <textarea class="campo_formulario" placeholder="Digite sua mensagem" rows="6" id="mensagem" required
+                        data-i18n="mensagem_placeholder"></textarea>
                 </div>
-                <button type="submit" class="botao_formulario">Enviar Whatsapp</button>
+                <button type="submit" class="botao_formulario" data-i18n="botao_enviar">Enviar Whatsapp</button>
             </form>
         </section>
 
         <footer class="rodape">
-            <p>Copyright &copy; 2025</p>
+            <p data-i18n="rodape">Copyright &copy; 2025</p>
         </footer>
 
     </main>
+
+
     <script src="scripts.js"></script>
 </body>
+
+</html>

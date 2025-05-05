@@ -9,6 +9,7 @@
     color: #ffffff,
 
 
+
 }
 
 li,
@@ -82,10 +83,11 @@ header {
 .projetos {
     display: flex;
     flex-direction: column;
+
     background-color: #7c7c7c;
     font-family: "Heebo", sans-serif;
-    padding: 10px;
-    height: 80vh;
+    padding-top: 10px;
+    height: 55vh;
     width: 100%;
     color: #ffffff;
 }
@@ -93,21 +95,28 @@ header {
 .projetos_grade {
     display: flex;
     flex-direction: row;
-
 }
 
 .projetos_card {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     margin: 10px;
     background-color: #24252A;
     border-radius: 8px;
-    height: 350px;
-    width: 400px;
+    height: 340px;
+    width: 380px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-radius: 8px;
 
 }
 
+
 .projetos_card p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+
 }
 
 .imagem-card-projetos {
@@ -116,8 +125,118 @@ header {
     height: 200px;
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 8px;
 
 }
+
+.projetos_botao {
+    background-color: #7a2525;
+    color: #ffffff;
+    padding: 8px;
+
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+.projetos_botao:hover {
+    color: #e2dfdf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    scale: 1.02;
+}
+
+/*****************github repositorios*************/
+.repositorios_grade {
+    background-color: #7c7c7c;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+.repositorios_grade h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Heebo", sans-serif;
+}
+
+.repositorios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #7c7c7c;
+    font-family: "Heebo", sans-serif;
+    padding-bottom: 10px;
+    height: auto;
+    width: 100%;
+    color: #ffffff;
+    justify-content: center;
+    gap: 15px;
+    /* Reduced gap */
+}
+
+
+.data_repositorios {
+    background: #7a2525;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    /* Reduced margin */
+}
+
+.repositorios_card {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #ffffff;
+    padding: 15px;
+    background-color: #24252A;
+    height: 90px;
+    width: 500px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.repositorios_card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    scale: 1.04;
+}
+
+.repositorios_card_interno_esquerdo,
+.repositorios_card_interno_direito {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+
+.titulo-repositorio,
+.url-repositorio {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+
+}
+
+
+
+/*************************************************/
 
 /************************habilidades**************/
 
@@ -134,7 +253,6 @@ header {
 
 .habilidades h1 {
     margin: 10px;
-    margin-bottom: 40px;
 }
 
 .habilidades_grade {
@@ -150,7 +268,13 @@ header {
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    width: 100px;
+    width: 120px;
+    height: 120px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-radius: 8px;
+
 }
 
 /********************experiencia*********************/
@@ -216,7 +340,6 @@ header {
     margin: 0 auto;
     padding: 20px;
     background-color: #24252A;
-
     border-radius: 8px;
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -225,6 +348,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-radius: 8px;
 }
 
 .input_formulario {
@@ -251,13 +378,15 @@ header {
     font-size: 20px;
     border: none;
     padding: 10px;
-    margin: 15px
+    margin: 15px;
+    transition: all 0.3s ease 0s;
 }
 
 .botao_formulario:hover {
     color: #e2dfdf;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
+    scale: 1.05;
 }
 
 /***********************rodapé*********************/
@@ -268,5 +397,104 @@ header {
     width: 100%;
     text-align: center;
     padding: 10px;
+}
 
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .sobre h1 {
+        font-size: 20px;
+    }
+
+    .sobre p {
+        padding: 10px;
+    }
+
+    .sobre {
+        padding: 20px 5px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .sobre_card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto_perfil {
+        margin: 0 auto 20px auto;
+    }
+
+    .projetos {
+        padding: 20px 5px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .projetos_grade {
+        flex-direction: column;
+    }
+
+    .projetos_card {
+        width: 90%;
+    }
+
+    .habilidades {
+        padding: 20px 5px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .habilidades_grade {
+        flex-direction: column;
+    }
+
+    .habilidades_icons {
+        width: 100px;
+        height: 100px;
+    }
+
+    .experiencia {
+        padding: 20px 5px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .educacao {
+        padding: 20px 5px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .contato {
+        padding: 20px 5px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .formulario_card {
+        width: 90%;
+    }
+
+    .campo_formulario {
+        width: 90%;
+    }
+
+    .rodape {
+        padding: 30px;
+        font-size: 12px;
+    }
+
+    .repositorios_card {
+        width: 350px;
+    }
+
+    .titulo-repositorio,
+    .url-repositorio {
+        width: 200px;
+        text-overflow: ellipsis;
+
+    }
 }
