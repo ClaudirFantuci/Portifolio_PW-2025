@@ -1,395 +1,484 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff,
-
-
-
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-li,
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1f242d;
+}
+
 a {
-    font-family: 'Lexend', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    color: #ffffff;
     text-decoration: none;
-    color: #fafafa;
-
-}
-
-/**********************barra navegação**************/
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10%;
-    background-color: #24252A;
 }
 
 .nav-links {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-links .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul li {
     list-style: none;
+    margin-left: 35px;
 }
 
-.nav-links li {
-    display: inline-block;
-    padding: 20px 20px;
+.nav-links ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
-.nav-links li a {
-    transition: all 0.3s ease 0s;
+.nav-links ul li:hover a {
+    color: #7a2525;
 }
 
-.nav-links li a:hover {
-    color: #5c5c5c;
+.nav-links select {
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: #1f242d;
+    border: solid;
+    border-width: 2px;
+    color: #ffffff;
+    font-weight: 700;
 }
 
-/***********************sobre*********************/
 .sobre {
     display: flex;
-    flex-direction: column;
-    background-color: #24252A;
-    font-family: "Heebo", sans-serif;
-    padding: 10px;
-    height: 80vh;
-    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+    padding: 60px 9% 60px;
     color: #ffffff;
+    justify-content: space-between;
+    background-color: #1f242d;
+    border-bottom: 2px solid #2c323d;
 }
 
-.sobre_card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.sobre-info {
     max-width: 800px;
 }
 
-.foto_perfil {
-    object-fit: cover;
-    overflow: hidden;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 50px;
+.sobre-info h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
 }
 
-/************************projetos******************/
-.projetos {
+.sobre-info p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.sobre-info .botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7a2525;
+    border: 2px solid #7a2525;
+    border-radius: 35px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.sobre-info .botao:hover {
+    background-color: #1f242d;
+    scale: 1.1;
+}
+
+.foto-grade .foto {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #1f242d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.foto-grade .foto {
+    mix-blend-mode: lighten;
+}
+
+.contato {
+    min-height: 40vh;
+    padding: 60px 9%;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #232830;
+    border-bottom: 2px solid #2c323d;
+}
 
-    background-color: #7c7c7c;
-    font-family: "Heebo", sans-serif;
-    padding-top: 10px;
-    height: 55vh;
+.contato h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.formulario_card {
     width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input_formulario {
+    width: 100%;
+}
+
+.campo_formulario {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    background-color: #2c323d;
     color: #ffffff;
+    font-size: 16px;
+    resize: none;
+}
+
+.campo_formulario::placeholder {
+    color: #a0a0a0;
+}
+
+.campo_formulario:focus {
+    outline: none;
+    border-color: #7a2525;
+}
+
+.botao_formulario {
+    padding: 12px 30px;
+    background-color: #7a2525;
+    border: 2px solid #7a2525;
+    border-radius: 35px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    align-self: center;
+}
+
+.botao_formulario:hover {
+    background-color: #1f242d;
+    scale: 1.05;
+}
+
+.projetos {
+    min-height: 40vh;
+    padding: 60px 9%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f242d;
+    border-bottom: 2px solid #2c323d;
+}
+
+.projetos h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .projetos_grade {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .projetos_card {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    background-color: #24252A;
-    border-radius: 8px;
-    height: 340px;
-    width: 380px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 2px;
-    border-radius: 8px;
-
+    background-color: #2c323d;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
 }
 
+.projetos_card:hover {
+    transform: scale(1.05);
+}
+
+.projetos_card h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 
 .projetos_card p {
-    margin-bottom: 10px;
-
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #d3d3d3;
 }
 
 .imagem-card-projetos {
-    object-fit: cover;
-    overflow: hidden;
-    height: 200px;
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 8px;
-
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .projetos_botao {
+    padding: 10px 20px;
     background-color: #7a2525;
+    border: 2px solid #7a2525;
+    border-radius: 35px;
     color: #ffffff;
-    padding: 8px;
-
-    border-radius: 8px;
-    border: none;
+    font-weight: 600;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 14px;
-    transition: all 0.3s ease 0s;
+    transition: 0.5s;
 }
 
 .projetos_botao:hover {
-    color: #e2dfdf;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    scale: 1.02;
+    background-color: #1f242d;
 }
 
-/*****************github repositorios*************/
 .repositorios_grade {
-    background-color: #7c7c7c;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-
+    padding: 60px 9%;
+    color: #ffffff;
+    background-color: #232830;
+    text-align: center;
+    border-bottom: 2px solid #2c323d;
 }
 
 .repositorios_grade h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Heebo", sans-serif;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .repositorios {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #7c7c7c;
-    font-family: "Heebo", sans-serif;
-    padding-bottom: 10px;
-    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     width: 100%;
-    color: #ffffff;
-    justify-content: center;
-    gap: 15px;
-    /* Reduced gap */
-}
-
-
-.data_repositorios {
-    background: #7a2525;
-    color: #fff;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    margin-right: 8px;
-    /* Reduced margin */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .repositorios_card {
-    font-size: 16px;
+    background-color: #2c323d;
+    border-radius: 15px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 8px;
-    border-color: #ffffff;
-    padding: 15px;
-    background-color: #24252A;
-    height: 90px;
-    width: 500px;
     justify-content: space-between;
-    box-sizing: border-box;
-    overflow: hidden;
-    transition: all 0.3s ease 0s;
+    align-items: center;
+    transition: 0.3s;
 }
 
 .repositorios_card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    scale: 1.04;
+    transform: scale(1.05);
 }
 
-.repositorios_card_interno_esquerdo,
-.repositorios_card_interno_direito {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-
+.repositorios_card_interno_esquerdo {
+    text-align: left;
 }
 
-.titulo-repositorio,
+.titulo-repositorio {
+    margin-bottom: 10px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .url-repositorio {
     width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
-
-
+    font-size: 14px;
 }
 
-
-
-/*************************************************/
-
-/************************habilidades**************/
-
-.habilidades {
-    display: flex;
-    flex-direction: column;
-    background-color: #24252A;
-    font-family: "Heebo", sans-serif;
-    padding: 10px;
-    height: 40vh;
-    width: 100%;
-    color: #ffffff;
-}
-
-.habilidades h1 {
-    margin: 10px;
-}
-
-.habilidades_grade {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.habilidades_icons {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    width: 120px;
-    height: 120px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 2px;
-    border-radius: 8px;
-
-}
-
-/********************experiencia*********************/
-.experiencia {
-    display: flex;
-    flex-direction: column;
-    background-color: #7c7c7c;
-    font-family: "Heebo", sans-serif;
-    padding: 10px;
-    height: 40vh;
-    width: 100%;
-    color: #ffffff;
-}
-
-/*********************educação*********************/
-.educacao {
-    display: flex;
-    flex-direction: column;
-    background-color: #24252A;
-    font-family: "Heebo", sans-serif;
-    padding: 10px;
-    height: 40vh;
-    width: 100%;
-    color: #ffffff;
+.repositorios_card_interno_direito {
+    text-align: right;
 }
 
 .ano {
-
+    margin-bottom: 10px;
     background: #7a2525;
     color: #fff;
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 0.8rem;
-    margin-right: 10px;
+}
 
+.linguagem {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.habilidades {
+    min-height: 40vh;
+    padding: 60px 9%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f242d;
+    border-bottom: 2px solid #2c323d;
+}
+
+.habilidades h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.habilidades_grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.habilidades_icons {
+    text-align: center;
+}
+
+.habilidades_icons i {
+    font-size: 48px;
+}
+
+.habilidades_icons p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.experiencia {
+    min-height: 40vh;
+    padding: 60px 9%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #232830;
+    border-bottom: 2px solid #2c323d;
+}
+
+.experiencia h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.experiencia_grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.experiencia_card {
+    background-color: #2c323d;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.experiencia_card:hover {
+    transform: scale(1.05);
+}
+
+.experiencia_card h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.experiencia_card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #d3d3d3;
+}
+
+.educacao {
+    min-height: 40vh;
+    padding: 60px 9%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f242d;
+    border-bottom: 2px solid #2c323d;
 }
 
 .educacao h1 {
-    margin: 10px;
+    font-size: 45px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
-/***********************contato*******************/
-.contato {
-    display: flex;
-    flex-direction: column;
-    background-color: #7c7c7c;
-    font-family: "Heebo", sans-serif;
-    padding: 10px;
-    height: 80vh;
+.educacao_grade {
     width: 100%;
-    color: #ffffff;
+    max-width: 1200px;
 }
 
-.contato h1 {
-    margin: 10px;
-    margin-bottom: 40px;
-}
-
-.formulario_card {
-    height: 350px;
-    width: 400px;
-    margin: 0 auto;
+.educacao_card {
+    background-color: #2c323d;
+    border-radius: 15px;
     padding: 20px;
-    background-color: #24252A;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #879197;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 2px;
-    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
 }
 
-.input_formulario {
-    margin: 7px;
+.educacao_card:hover {
+    transform: scale(1.05);
 }
 
-.campo_formulario {
-    justify-content: center;
-    padding: 10px;
-    margin: 8px;
-    width: 350px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
+.educacao_card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.botao_formulario {
-    font-size: 20px;
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #7a2525;
-    /* background-color: #FF6464; */
-    border-radius: 8px;
-    font-size: 20px;
-    border: none;
-    padding: 10px;
-    margin: 15px;
-    transition: all 0.3s ease 0s;
+.educacao_card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #d3d3d3;
 }
 
-.botao_formulario:hover {
-    color: #e2dfdf;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    scale: 1.05;
+.educacao_card .ano {
+    font-weight: 600;
 }
 
-/***********************rodapé*********************/
 .rodape {
     background-color: #171717;
     color: #ffffff;
@@ -397,104 +486,4 @@ header {
     width: 100%;
     text-align: center;
     padding: 10px;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .sobre h1 {
-        font-size: 20px;
-    }
-
-    .sobre p {
-        padding: 10px;
-    }
-
-    .sobre {
-        padding: 20px 5px;
-        height: auto;
-        font-size: 14px;
-    }
-
-    .sobre_card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .foto_perfil {
-        margin: 0 auto 20px auto;
-    }
-
-    .projetos {
-        padding: 20px 5px;
-        height: auto;
-        font-size: 14px;
-    }
-
-    .projetos_grade {
-        flex-direction: column;
-    }
-
-    .projetos_card {
-        width: 90%;
-    }
-
-    .habilidades {
-        padding: 20px 5px;
-        height: auto;
-        font-size: 14px;
-    }
-
-    .habilidades_grade {
-        flex-direction: column;
-    }
-
-    .habilidades_icons {
-        width: 100px;
-        height: 100px;
-    }
-
-    .experiencia {
-        padding: 20px 5px;
-        height: auto;
-        font-size: 14px;
-    }
-
-    .educacao {
-        padding: 20px 5px;
-        height: auto;
-        font-size: 14px;
-    }
-
-    .contato {
-        padding: 20px 5px;
-        height: auto;
-        font-size: 14px;
-    }
-
-    .formulario_card {
-        width: 90%;
-    }
-
-    .campo_formulario {
-        width: 90%;
-    }
-
-    .rodape {
-        padding: 30px;
-        font-size: 12px;
-    }
-
-    .repositorios_card {
-        width: 350px;
-    }
-
-    .titulo-repositorio,
-    .url-repositorio {
-        width: 200px;
-        text-overflow: ellipsis;
-
-    }
 }

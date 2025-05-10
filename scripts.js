@@ -55,7 +55,7 @@ function getApiGithub() {
                         <p class="url-repositorio">${item.html_url}</p>
                     </div>
                     <div class="repositorios_card_interno_direito">
-                        <p class="data_repositorios">${Intl.DateTimeFormat("pt-BR").format(new Date(item.created_at))}</p>
+                        <p class="ano">${Intl.DateTimeFormat("pt-BR").format(new Date(item.created_at))}</p>
                         <p class="linguagem">${item.language}</p>
                     </div>
                 </section>`;
