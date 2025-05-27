@@ -15,7 +15,7 @@ function enviarMensagem() {
 const troca = document.getElementById("troca-idioma");
 
 function traduzir(lang) {
-    fetch(`assets/lang/${lang}.json`)
+    fetch(`json/lang/${lang}.json`)
         .then(res => res.json())
         .then(data => {
             document.querySelectorAll("[data-i18n]").forEach(el => {

@@ -28,7 +28,7 @@ a {
     top: 0;
     width: 100%;
     padding: 25px 9%;
-    background: transparent;
+    background-color: #1f242d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -486,4 +486,24 @@ a {
     width: 100%;
     text-align: center;
     padding: 10px;
+}
+
+
+@media(max-width: 1100px) {
+     .nav-links{
+      display: none;
+    }
+
+  }
+
+@media(max-width: 600px){
+    .sobre{
+        align-items: center;
+        
+    }
+
+    .foto-grade .foto {
+        display: none;
+    }
+
 }
