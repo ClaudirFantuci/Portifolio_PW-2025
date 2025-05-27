@@ -21,6 +21,11 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+.titulo {
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
 
 .nav-links {
     position: fixed;
@@ -138,11 +143,7 @@ a {
     border-bottom: 2px solid #2c323d;
 }
 
-.contato h1 {
-    font-size: 45px;
-    margin-bottom: 40px;
-    text-align: center;
-}
+
 
 .formulario_card {
     width: 100%;
@@ -205,11 +206,7 @@ a {
     border-bottom: 2px solid #2c323d;
 }
 
-.projetos h1 {
-    font-size: 45px;
-    margin-bottom: 40px;
-    text-align: center;
-}
+
 
 .projetos_grade {
     display: grid;
@@ -354,11 +351,6 @@ a {
     border-bottom: 2px solid #2c323d;
 }
 
-.habilidades h1 {
-    font-size: 45px;
-    margin-bottom: 40px;
-    text-align: center;
-}
 
 .habilidades_grade {
     display: grid;
@@ -393,11 +385,7 @@ a {
     border-bottom: 2px solid #2c323d;
 }
 
-.experiencia h1 {
-    font-size: 45px;
-    margin-bottom: 40px;
-    text-align: center;
-}
+
 
 .experiencia_grade {
     display: grid;
@@ -441,11 +429,7 @@ a {
     border-bottom: 2px solid #2c323d;
 }
 
-.educacao h1 {
-    font-size: 45px;
-    margin-bottom: 40px;
-    text-align: center;
-}
+
 
 .educacao_grade {
     width: 100%;

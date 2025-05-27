@@ -21,11 +21,7 @@ function traduzir(lang) {
             document.querySelectorAll("[data-i18n]").forEach(el => {
                 const key = el.getAttribute("data-i18n");
                 if (data[key]) {
-                    if (el.placeholder !== undefined) {
-                        el.placeholder = data[key];
-                    } else {
                         el.textContent = data[key];
-                    }
                 }
             });
         });
