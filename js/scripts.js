@@ -6,9 +6,7 @@ function enviarMensagem() {
     const texto = `Olá, meu nome é ${nome}. ${mensagem}`;
     const whatsappUrl = `https://api.whatsapp.com/send?phone=554499907886&text=${encodeURIComponent(texto)}`;
     window.open(whatsappUrl, '_blank');
-
-    //const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgFormatada}`;
-    //const url = `https:/wa.me/${telefone}?text=${msgFormatada}`;
+    ;
 
 }
 
@@ -21,7 +19,7 @@ function traduzir(lang) {
             document.querySelectorAll("[data-i18n]").forEach(el => {
                 const key = el.getAttribute("data-i18n");
                 if (data[key]) {
-                        el.textContent = data[key];
+                    el.textContent = data[key];
                 }
             });
         });
