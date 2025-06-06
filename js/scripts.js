@@ -36,10 +36,12 @@ function getApiGithub() {
             if (!res.ok) {
                 throw new Error("Erro ao carregar os repositórios");
             }
-            let titulo = document.creatElement("p");
-            titulo.innerHTML = `<h2 data-i18n="titulo_repositorios">Veja também minhas ultimas contribuições no github.</h2>`;
             let dados = await res.json();
             console.log(dados);
+            let teste = document.createElement("h2");
+            teste.textContent = "Veja também minhas ultimas contribuições no github.";
+            repositorios_grade.appendChild(teste);
+
             dados.slice(dados.length - 3, dados.length).map(item => {
                 let projetos = document.createElement("a");
                 projetos.href = item.html_url;

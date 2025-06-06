@@ -87,6 +87,8 @@ a {
     border-bottom: 2px solid #2c323d;
 }
 
+
+
 .sobre-info {
     max-width: 800px;
 }
@@ -274,7 +276,8 @@ a {
 
 .repositorios_grade h2 {
     font-size: 32px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+
 }
 
 .repositorios {
